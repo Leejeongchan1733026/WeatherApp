@@ -8,12 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    @IBOutlet var iconImageView: UIImageView!
-    @IBOutlet var tempLabel: UILabel!
-    @IBOutlet var maxTempLabel: UILabel!
-    @IBOutlet var minTempLabel: UILabel!
-    
     // 받아온 데이터를 저장할 프로퍼티
         var weather: Weather?
         var main: Main?
@@ -60,12 +54,6 @@ class ViewController: UIViewController {
     private func setWeatherUI() {
         let url = URL(string: "https://openweathermap.org/img/wn/\(self.weather?.icon ?? "00")@2x.png")
         let data = try? Data(contentsOf: url!)
-        if let data = data {
-            iconImageView.image = UIImage(data: data)
-        }
-        tempLabel.text = "\(main!.temp)"
-        maxTempLabel.text = "\(main!.temp_max)"
-        minTempLabel.text = "\(main!.temp_min)"
     }
 
 }

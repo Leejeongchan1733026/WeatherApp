@@ -64,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				FB3C2BCC285454DA002B19DA /* Weather.swift */,
-				FB3C2BCB28545488002B19DA /* Model */,
 				FB3C2BB528545056002B19DA /* AppDelegate.swift */,
 				FB3C2BB728545056002B19DA /* SceneDelegate.swift */,
 				FB3C2BB928545056002B19DA /* ViewController.swift */,
@@ -75,13 +74,6 @@
 				FB3C2BCE285455C2002B19DA /* WeatherSecvice.swift */,
 			);
 			path = WeatherApp;
-			sourceTree = "<group>";
-		};
-		FB3C2BCB28545488002B19DA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
